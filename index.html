@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon 🥷🏻</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container" onclick="playLogoAudio()">
+        <img src="LOGO.png" alt="Logo" class="logo">
+    </div>
+    <div class="text">coming soon</div>
+    <div class="audio-container">
+        <button class="play-button" onclick="playButtonAudio()">
+            <img src="play.png" alt="Play">
+        </button>
+    </div>
+
+    <audio id="logo-audio" src="audio2.mp3"></audio>
+    <audio id="button-audio" src="AMERI.wav"></audio>
+
+    <script>
+        function playLogoAudio() {
+            var logoAudio = document.getElementById("logo-audio");
+            logoAudio.play();
+        }
+
+        function playButtonAudio() {
+            var buttonAudio = document.getElementById("button-audio");
+            buttonAudio.play();
+        }
+    </script>
+</body>
+</html>
